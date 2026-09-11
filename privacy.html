@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · WetPantry Scanner</title>
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --card: #ffffff;
+    --ink: #1a1a17;
+    --muted: #5f5d57;
+    --rule: #e4e1da;
+    --accent: #b4541f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16150f;
+      --card: #201e18;
+      --ink: #f2efe8;
+      --muted: #a8a49a;
+      --rule: #34312a;
+      --accent: #e8874a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding-block: 3rem;
+    padding-inline: 20px;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  header { margin-bottom: 2.5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  .updated { color: var(--muted); margin: 0; font-size: .9rem; }
+  h2 {
+    font-size: .8rem; text-transform: uppercase; letter-spacing: .09em;
+    color: var(--muted); margin: 0 0 .75rem; font-weight: 600;
+  }
+  section {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 1.4rem 1.5rem;
+    margin-bottom: 1.1rem;
+  }
+  .lede { background: transparent; border-style: dashed; }
+  p { margin: 0 0 .9rem; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); }
+  ul { margin: 0 0 .9rem; padding-left: 1.15rem; }
+  ul:last-child { margin-bottom: 0; }
+  li { margin-bottom: .5rem; }
+  li:last-child { margin-bottom: 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  .scroll { overflow-x: auto; }
+  footer {
+    color: var(--muted); font-size: .85rem;
+    margin-top: 2rem; padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="updated">WetPantry Scanner · Last updated 11 September 2026</p>
+  </header>
+
+  <section class="lede">
+    <p><strong>The short version.</strong> WetPantry Scanner has no accounts and no sign-in. Your pantry and your recipes are stored on your device and are not sent anywhere. Three things do leave the device, and only when you act: a barcode you scan, a recipe photo you choose to have read, and a check that the app is genuine. There is no analytics, no advertising, and no tracking of any kind.</p>
+  </section>
+
+  <section>
+    <h2>What stays on your device</h2>
+    <p>Everything you build up in the app is held in local storage on your iPhone or iPad, and nowhere else:</p>
+    <ul>
+      <li>Pantry items: barcode, product name, brand, quantity, expiration date, which location you keep them in, and any notes you write.</li>
+      <li>Recipes: the title, the ingredient list, and the photo you took of the page.</li>
+      <li>The locations you create, along with their names, icons, and colours.</li>
+    </ul>
+    <p>None of this is uploaded, backed up to us, or visible to anyone but you. If you use iCloud device backup, your pantry may be included in that backup under Apple's terms, the same as any other app's local data.</p>
+  </section>
+
+  <section>
+    <h2>What leaves your device</h2>
+
+    <p><strong>Barcode lookups.</strong> When you scan a barcode, the number is sent to <a href="https://world.openfoodfacts.org">Open Food Facts</a>, a public food database, which returns a product name, brand, package size, and photo. Nothing identifying you is attached to that request. The request does identify the app itself and links to this site, because Open Food Facts asks every application to say who it is. The camera image never leaves your device: the barcode is decoded on the phone and only the resulting number is sent.</p>
+
+    <p><strong>Recipe scanning.</strong> When you photograph a recipe and ask the app to read it, that photo is sent to a service run by the developer, which passes it to <a href="https://www.anthropic.com">Anthropic</a> to extract the ingredient list. The photo is not stored by that service or by us. Anthropic processes it to answer the request and does not use it to train models. The extracted ingredients come back to your device and are saved there. This only happens when you take or choose a photo and ask for it to be read.</p>
+
+    <p><strong>Proving the app is genuine.</strong> Recipe scanning is limited to five scans a day per installation, and that limit has to be enforced somewhere the device cannot simply bypass. The app uses Apple's App Attest to prove it is a real, unmodified copy. This creates an identifier for your installation, which the service stores along with a count of how many scans that installation has used. The identifier is generated by Apple for this purpose, is specific to this app, is not your Apple Account, and is not connected to your name, email, or any other app. It cannot be used to identify you as a person.</p>
+  </section>
+
+  <section>
+    <h2>What the service keeps, and for how long</h2>
+    <div class="scroll">
+      <table>
+        <tr><th>What</th><th>Why</th><th>How long</th></tr>
+        <tr><td>Recipe photos</td><td>Read once, returned to you</td><td>Not stored at all</td></tr>
+        <tr><td>Extracted ingredients</td><td>Sent to your device</td><td>Not stored at all</td></tr>
+        <tr><td>Installation identifier and its key</td><td>Proving the app is genuine</td><td>Until you delete the app</td></tr>
+        <tr><td>Daily scan count</td><td>Enforcing the five-a-day limit</td><td>48 hours</td></tr>
+        <tr><td>One-time request tokens</td><td>Preventing replayed requests</td><td>5 minutes</td></tr>
+        <tr><td>Error logs</td><td>Fixing faults</td><td>Standard server logs; no photos or recipe content</td></tr>
+      </table>
+    </div>
+    <p>Deleting the app removes the installation identifier from your device, so it is never used again. The service runs on Amazon Web Services in the United States.</p>
+  </section>
+
+  <section>
+    <h2>What we do not do</h2>
+    <ul>
+      <li>No account, so no name, email address, or password is ever asked for or held.</li>
+      <li>No analytics or crash-reporting services, and no advertising.</li>
+      <li>No tracking, and nothing shared with data brokers or advertisers.</li>
+      <li>No third-party software development kits of any kind are embedded in the app.</li>
+      <li>Nothing is sold, and nothing is shared beyond the two services named above.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Nutrition and allergy information</h2>
+    <p>The app deliberately does not show ingredients, allergens, or nutrition figures. It takes only a product's name, brand, and package size from Open Food Facts, so that nobody is led to rely on crowd-sourced data for a decision it cannot safely support. Always read the package.</p>
+  </section>
+
+  <section>
+    <h2>Camera and photo access</h2>
+    <p>The app asks for the camera so it can read barcodes and photograph recipes. Barcode frames are processed on the device and discarded. A recipe photo is sent for reading only when you ask for it. If you choose an existing photo instead, the app receives only the image you picked, not your photo library.</p>
+  </section>
+
+  <section>
+    <h2>Deleting your data</h2>
+    <p>Because there is no account, there is nothing to close. Deleting the app from your device deletes your pantry, your recipes, and the photos stored with them. The installation identifier held by the service becomes permanently unusable at the same moment, because the key it depends on lives in your device's secure hardware and is destroyed with the app. If you would like that record removed sooner, ask through the link below.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>WetPantry Scanner is not directed at children and collects no personal information from anyone, including children.</p>
+  </section>
+
+  <section>
+    <h2>Changes</h2>
+    <p>If this policy changes, the revised version will be posted here with a new date at the top. Material changes will also be noted in the app's release notes.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy, or a request to remove an installation record: <a href="https://github.com/wethcr/WetPantry/issues">open an issue</a>. A free GitHub account is needed to post.</p>
+  </section>
+
+  <footer>
+    <a href="./">Back to WetPantry Scanner</a>
+  </footer>
+</main>
+</body>
+</html>
