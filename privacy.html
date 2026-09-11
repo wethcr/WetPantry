@@ -45,13 +45,13 @@
         <tr><th>What</th><th>Why</th><th>How long</th></tr>
         <tr><td>Recipe photos</td><td>Read once, returned to you</td><td>Not stored at all</td></tr>
         <tr><td>Extracted ingredients</td><td>Sent to your device</td><td>Not stored at all</td></tr>
-        <tr><td>Installation identifier and its key</td><td>Proving the app is genuine</td><td>Until you delete the app</td></tr>
+        <tr><td>Installation identifier and its key</td><td>Proving the app is genuine</td><td>Kept indefinitely, until you ask for it to be removed</td></tr>
         <tr><td>Daily scan count</td><td>Enforcing the five-a-day limit</td><td>48 hours</td></tr>
         <tr><td>One-time request tokens</td><td>Preventing replayed requests</td><td>5 minutes</td></tr>
         <tr><td>Error logs</td><td>Fixing faults</td><td>Standard server logs; no photos or recipe content</td></tr>
       </table>
     </div>
-    <p>Deleting the app removes the installation identifier from your device, so it is never used again. The service runs on Amazon Web Services in the United States.</p>
+    <p>The service runs on Amazon Web Services in the United States.</p>
   </section>
 
   <section>
@@ -77,7 +77,8 @@
 
   <section>
     <h2>Deleting your data</h2>
-    <p>Because there is no account, there is nothing to close. Deleting the app from your device deletes your pantry, your recipes, and the photos stored with them. The installation identifier held by the service becomes permanently unusable at the same moment, because the key it depends on lives in your device's secure hardware and is destroyed with the app. If you would like that record removed sooner, ask through the link below.</p>
+    <p>Because there is no account, there is nothing to close. Deleting the app from your device deletes your pantry, your recipes, and the photos stored with them.</p>
+    <p>The installation identifier is the one thing that does not go with it. That record stays on the service until it is removed by hand, and a reinstalled app generally starts over with a new one. The record is a random identifier and a counter; it carries no name, no address, and nothing about what you scanned or cooked. If you would like it removed, ask through the link below.</p>
   </section>
 
   <section>
