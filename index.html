@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WetPantry Scanner</title>
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --card: #ffffff;
+    --ink: #1a1a17;
+    --muted: #5f5d57;
+    --rule: #e4e1da;
+    --accent: #b4541f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16150f;
+      --card: #201e18;
+      --ink: #f2efe8;
+      --muted: #a8a49a;
+      --rule: #34312a;
+      --accent: #e8874a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding-block: 3rem;
+    padding-inline: 20px;
+  }
+  main { max-width: 40rem; margin: 0 auto; }
+  header { margin-bottom: 2.5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  .tagline { color: var(--muted); margin: 0; font-size: 1.05rem; }
+  h2 {
+    font-size: .8rem; text-transform: uppercase; letter-spacing: .09em;
+    color: var(--muted); margin: 0 0 .75rem; font-weight: 600;
+  }
+  section {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 1.4rem 1.5rem;
+    margin-bottom: 1.1rem;
+  }
+  p { margin: 0 0 .9rem; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); }
+  ul { margin: 0; padding-left: 1.15rem; }
+  li { margin-bottom: .45rem; }
+  li:last-child { margin-bottom: 0; }
+  .pending {
+    border-style: dashed;
+    background: transparent;
+  }
+  footer {
+    color: var(--muted); font-size: .85rem;
+    margin-top: 2rem; padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>WetPantry Scanner</h1>
+    <p class="tagline">A pantry that keeps track of itself. Scan a barcode to add food, photograph a recipe to see what you already have.</p>
+  </header>
+
+  <section>
+    <h2>What it does</h2>
+    <ul>
+      <li>Scans barcodes and fills in the product name, brand, ingredients and allergens.</li>
+      <li>Tracks where food lives and when it expires, and warns you before it goes off.</li>
+      <li>Reads a photographed recipe and checks its ingredients against your pantry.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Your data</h2>
+    <p>The app has no accounts and no sign-in. Your pantry and recipes are stored on your device and nowhere else. Deleting the app deletes them.</p>
+    <p>Two things leave the device. A scanned barcode goes to Open Food Facts to look the product up, with nothing attached that identifies you. A photographed recipe goes to a service that reads it and returns the ingredients; the photo is not kept.</p>
+  </section>
+
+  <section class="pending">
+    <h2>Privacy policy</h2>
+    <p>The full policy will be published here before release.</p>
+  </section>
+
+  <section>
+    <h2>Support</h2>
+    <p>Questions, problems, or a barcode that comes back wrong: <a href="https://github.com/wethcr/WetPantry/issues">open an issue</a> and I will see it. You will need a free GitHub account to post.</p>
+  </section>
+
+  <section>
+    <h2>Credits</h2>
+    <p>Product data comes from <a href="https://world.openfoodfacts.org">Open Food Facts</a>, © Open Food Facts contributors, available under the <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License (ODbL) v1.0</a>. Product photos are licensed <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> by their contributors.</p>
+  </section>
+
+  <footer>
+    WetPantry Scanner is an independent app. It is not affiliated with Open Food Facts.
+  </footer>
+</main>
+</body>
+</html>
